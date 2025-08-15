@@ -11,7 +11,6 @@
 
 > **A comprehensive machine learning project for predicting grocery sales and extracting business insights from retail data**
 
-![Retail Analytics Dashboard](https://via.placeholder.com/800x400/2E8B57/FFFFFF?text=Supermart+Grocery+Analytics)
 
 ## 🎯 Project Overview
 
@@ -31,34 +30,6 @@ This project analyzes grocery sales data from Supermart, a fictional grocery del
 - **Customer Insights**: Understand purchasing patterns for targeted marketing
 - **Operational Efficiency**: Data-driven decisions for resource allocation
 
-## 🗂️ Repository Structure
-
-```
-supermart-grocery-analytics/
-├── 📁 data/
-│   ├── Supermart-Grocery-Sales-Retail-Analytics-Dataset.csv
-│   └── data_dictionary.md
-├── 📁 notebooks/
-│   ├── Retail.ipynb                    # Main analysis notebook
-│   ├── exploratory_data_analysis.ipynb # Detailed EDA
-│   └── model_evaluation.ipynb          # Model performance analysis
-├── 📁 src/
-│   ├── data_preprocessing.py           # Data cleaning functions
-│   ├── feature_engineering.py          # Feature creation utilities
-│   ├── model_training.py               # ML model training
-│   └── visualization_utils.py          # Custom plotting functions
-├── 📁 reports/
-│   ├── Retail-Analytics-Project-Report.md
-│   └── presentation.pdf
-├── 📁 visualizations/
-│   ├── sales_by_category.png
-│   ├── regional_analysis.png
-│   ├── temporal_trends.png
-│   └── correlation_heatmap.png
-├── 📄 requirements.txt
-├── 📄 README.md
-└── 📄 LICENSE
-```
 
 ## 📊 Dataset Information
 
@@ -160,94 +131,10 @@ jupyter notebook
 - **Documentation**: Markdown
 - **Data Format**: CSV
 
-## 📈 Visualizations
-
-### Available Charts
-- Sales distribution by category
-- Regional performance comparison
-- Temporal trend analysis
-- Customer behavior patterns
-- Correlation heatmaps
-- Profit margin analysis
-
-### Sample Visualization
-![Sales by Category](https://via.placeholder.com/600x400/4CAF50/FFFFFF?text=Sales+by+Category+Chart)
-
-## 🔍 Usage Examples
-
-### Basic Data Analysis
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# Load the data
-df = pd.read_csv('data/Supermart-Grocery-Sales-Retail-Analytics-Dataset.csv')
-
-# Quick overview
-print(f"Dataset shape: {df.shape}")
-print(f"Date range: {df['Order Date'].min()} to {df['Order Date'].max()}")
-
-# Sales by category
-category_sales = df.groupby('Category')['Sales'].sum()
-category_sales.plot(kind='bar', title='Total Sales by Category')
-plt.show()
-```
-
-### Sales Prediction
-```python
-from src.model_training import train_sales_model
-from src.data_preprocessing import preprocess_data
-
-# Preprocess data
-X_train, X_test, y_train, y_test = preprocess_data(df)
-
-# Train model
-model = train_sales_model(X_train, y_train)
-
-# Make predictions
-predictions = model.predict(X_test)
-```
-
-## 📚 Documentation
-
-### Available Documents
-- **[Project Report](reports/Retail-Analytics-Project-Report.md)**: Comprehensive analysis report
-- **[Data Dictionary](data/data_dictionary.md)**: Detailed feature descriptions
-- **[API Documentation](docs/api.md)**: Function and class references
-
-### Key Notebooks
-- **`Retail.ipynb`**: Main analysis with complete ML pipeline
-- **`exploratory_data_analysis.ipynb`**: Detailed EDA and insights
-- **`model_evaluation.ipynb`**: Model performance and validation
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### How to Contribute
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Areas for Contribution
-- Model improvements and new algorithms
-- Additional visualization features
-- Performance optimization
-- Documentation enhancements
-- Bug fixes and testing
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👤 Author
 
-**[Your Name]**
-- 📧 Email: your.email@example.com
-- 💼 LinkedIn: [your-linkedin-profile](https://linkedin.com/in/yourprofile)
-- 🐱 GitHub: [@yourusername](https://github.com/yourusername)
+**Thaduru Sathwik Reddy**
 
 ## 🙏 Acknowledgments
 
@@ -255,21 +142,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Scikit-learn community for excellent ML tools
 - Matplotlib/Seaborn for visualization capabilities
 - Jupyter Project for interactive development environment
-
-## 📞 Support
-
-If you have questions or need help:
-- 📧 Open an [Issue](https://github.com/yourusername/supermart-grocery-analytics/issues)
-- 💬 Start a [Discussion](https://github.com/yourusername/supermart-grocery-analytics/discussions)
-- 📖 Check the [Documentation](docs/)
-
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/supermart-grocery-analytics&type=Date)](https://star-history.com/#yourusername/supermart-grocery-analytics&Date)
-
----
-
-<div align="center">
-  <p><strong>📊 Made with ❤️ for Data Science</strong></p>
-  <p>If you found this project helpful, please consider giving it a ⭐!</p>
-</div>
