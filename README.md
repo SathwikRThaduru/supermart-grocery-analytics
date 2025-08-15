@@ -1,6 +1,3 @@
-# supermart-grocery-analytics
-"Machine Learning project for grocery sales prediction and retail analytics"
-
 # 📊 Supermart Grocery Sales - Retail Analytics
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
