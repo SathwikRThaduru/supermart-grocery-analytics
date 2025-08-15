@@ -4,7 +4,6 @@
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org)
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green.svg)](https://pandas.pydata.org)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-red.svg)](https://scikit-learn.org)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > **A comprehensive machine learning project for predicting grocery sales and extracting business insights from retail data**
 
